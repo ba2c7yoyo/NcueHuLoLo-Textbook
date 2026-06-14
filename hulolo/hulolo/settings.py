@@ -11,6 +11,14 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+# 程式碼 5-2
+import os
+
+LINE_CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET")
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN")
+
+# 以下先加上print跑啟動網站，看看是否有在指令中成功獲得環境變數
+print(LINE_CHANNEL_SECRET, LINE_CHANNEL_ACCESS_TOKEN)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +35,6 @@ DEBUG = True
 
 # 留意此處應更換為實際的 Ngrok URL，而非以下的範例 URL
 ALLOWED_HOSTS = ["127.0.0.1", "4b2f-114-45-OOO.ngrok-free.app"]
-
 
 # Application definition
 

@@ -2,7 +2,8 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+# 程式碼 5-1
+import dotenv
 
 def main():
     """Run administrative tasks."""
@@ -17,6 +18,7 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
 if __name__ == "__main__":
+    # 加上以下這一行，讀取.env 檔案
+    dotenv.read_dotenv()
     main()
