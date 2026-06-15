@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # 程式碼 6-6
+    'import_export', # 幫助做資料輸入輸出成表格檔   
+    'chatbot' # 這裡放新增的 APP 名稱
+
 ]
 
 MIDDLEWARE = [
