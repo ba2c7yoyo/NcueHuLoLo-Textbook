@@ -66,7 +66,8 @@ ROOT_URLCONF = "hulolo.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        # 圖 8-2
+        "DIRS": ['static'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
