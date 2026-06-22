@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課程評價</title>
+    <!-- 程式碼 8-4 引入 Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://ncuehulolo.idv.tw/static/favicon.ico" type="image/x-icon" />
+
+    <style>
+        /* 宣告主色調和懸停顏色變數 */
+        :root {
+            --primary-color: #f3981c;
+            --primary-hover-color: #e68919;
+            --text-color: #808077;
+            --background-color: #f7f6ee;
+        }
+
+        /* 設定配色與背景 */
+        body {
+            background-color: var(--background-color);
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card-title,
+        .card-text {
+            color: var(--text-color);
+        }
+
+        /* 按鈕和連結顏色設定 */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active,
+        .btn-primary:visited {
+            background-color: var(--primary-hover-color) !important;
+            border-color: var(--primary-hover-color) !important;
+            box-shadow: none;
+            /* 去掉 Bootstrap 的內建按下陰影 */
+        }
+
+        .btn-link {
+            color: var(--primary-color);
+        }
+
+        .btn-link:hover {
+            color: var(--primary-hover-color);
+        }
+
+        /* 頁碼按鈕的顏色 */
+        .page-link {
+            color: var(--primary-color);
+        }
+
+        .page-link:hover {
+            color: var(--primary-hover-color);
+        }
+
+        /* 當前頁面按鈕的顏色 */
+        .page-item.active .page-link {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .page-item.active .page-link:hover {
+            background-color: var(--primary-hover-color);
+            border-color: var(--primary-hover-color);
+        }
+
+        /* 確保內容溢出時有省略效果 */
+        .card-text {
+            overflow: hidden;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container mt-5 ">
+        <h1 class="text-center mb-3" style="color: #808077;">課程評價</h1>
+
+        <!-- 程式碼 8-6 搜尋框 -->
+        <form method="GET" action="" class="mb-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="搜尋課名或老師" name="query"
+                            value="{{ request.GET.query }}">
+                        <button class="btn btn-primary" type="submit">搜尋</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <!-- 使用 Django template tag 顯示最多十則評價 -->
+        <div class="row">
+            <!-- 程式碼 8-8 -->
+            {% for each_feedback in feedback %}
+            <div class="col-md-4 mt-3 d-flex">
+                <div class="card mb-4 h-100">
+                    <div class="card-header">
+                        {{ each_feedback.teacher_name }}-{{ each_feedback.course_name }}
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text">
+                            {{ each_feedback.feedback_content|slice:":200"|linebreaksbr }}
+                            <!-- 程式碼 8-9，留意其中的 For Loop Template Tag 功能 -->
+                            <span class="collapse" id="collapse-each_feedback-{{ forloop.counter }}">
+                                <!-- 程式碼 8-10 -->
+                                {{ each_feedback.feedback_content|slice:"200:"|linebreaksbr }}
+                        </p>
+                        <button type="button" class="btn btn-sm btn-light" data-bs-toggle="collapse"
+                        href="#collapse-each_feedback-{{ forloop.counter }}" role="button" aria-expanded="false"
+                        aria-controls="collapse-each_feedback-{{ forloop.counter }}">
+                        <!-- 程式碼 8-11 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrows-expand" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10" />
+                        </svg>
+                    </button>
+                    </div>
+                    
+                    <!-- 程式碼 8-7 -->
+                    <div class="card-footer text-muted">
+                        投稿：{{ each_feedback.submitter_name }} {{ each_feedback.last_updated_time }}
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-center">沒有符合的評價結果。</p>
+            {% endfor %}
+        </div>
+        <!-- 程式碼 8-13 -->
+        <!-- 分頁按鈕 -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <!-- 程式碼 8-12 -->
+                {% if feedback.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ feedback.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% for num in feedback.paginator.page_range %}
+                <li class="page-item mt-3 {% if feedback.number == num %}active{% endif %}">
+                    <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                </li>
+                {% endfor %}
+                {% if feedback.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ feedback.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 程式碼 8-5 Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
