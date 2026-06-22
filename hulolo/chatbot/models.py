@@ -1,9 +1,6 @@
 # 程式碼 6-1
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-
-# Create your models here.
-
 # 新增 Course類別
 class Course(models.Model):
     # 程式碼 6-3
@@ -63,3 +60,12 @@ class Course(models.Model):
         auto_now=True, 
         verbose_name="上次修改日期"
 )
+
+# 程式碼 7-24
+class CourseAlias(models.Model):
+    course_name = models.CharField(max_length=20, 
+                        verbose_name="全稱")
+    alias = models.CharField(max_length=20, verbose_name="簡稱")
+
+    def __str__(self):
+        return self.alias

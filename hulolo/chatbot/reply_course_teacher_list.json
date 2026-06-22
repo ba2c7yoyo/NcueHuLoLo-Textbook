@@ -1,0 +1,20 @@
+{
+  "type": "bubble",
+  "size": "mega",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "這裡放訊息標題",
+        "weight": "bold",
+        "size": "lg",
+        "align": "center",
+        "offsetBottom": "sm"
+      }
+    ],
+    "spacing": "none",
+    "backgroundColor": "#f7f6ee"
+  }
+}
