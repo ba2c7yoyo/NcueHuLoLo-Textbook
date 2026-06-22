@@ -1,0 +1,240 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "header": {
+    "type": "box",
+    "layout": "baseline",
+    "contents": [
+      {
+        "type": "text",
+        "text": "這裡放課名",
+        "color": "#84a295",
+        "margin": "none",
+        "size": "lg",
+        "weight": "bold",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "這裡放老師名",
+        "color": "#808077",
+        "size": "lg",
+        "weight": "bold",
+        "align": "end",
+        "flex": 0
+      }
+    ],
+    "backgroundColor": "#f7f6ee",
+    "paddingAll": "10px",
+    "paddingTop": "22px",
+    "borderWidth": "none",
+    "paddingStart": "xxl",
+    "paddingEnd": "xxl"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "none",
+        "spacing": "none",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "這裡放評價內容",
+                "size": "15px",
+                "color": "#808077",
+                "margin": "none",
+                "flex": 0,
+                "wrap": true
+              }
+            ]
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#c0d9c2"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "類型",
+                "size": "sm",
+                "color": "#D8BF4A",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "這裡放課程類型",
+                "size": "sm",
+                "align": "end",
+                "color": "#E68750"
+              }
+            ],
+            "margin": "md"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "修課學期",
+                "size": "sm",
+                "color": "#D8BF4A",
+                "flex": 0
+              },
+              {
+                "type": "text",
+                "text": "這裡放學期",
+                "size": "sm",
+                "align": "end",
+                "color": "#E68750"
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "投稿者",
+                "size": "sm",
+                "color": "#D8BF4A"
+              },
+              {
+                "type": "text",
+                "text": "這裡放投稿人名",
+                "size": "sm",
+                "align": "end",
+                "color": "#E68750"
+              }
+            ],
+            "margin": "sm"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "這裡放老師名跟課程名",
+            "color": "#808077",
+            "weight": "bold",
+            "align": "start",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "這裡放第N則",
+            "margin": "md",
+            "size": "md",
+            "color": "#84a295",
+            "weight": "bold",
+            "align": "end"
+          }
+        ],
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "不乖檢舉",
+                  "uri": "http://linecorp.com/"
+                },
+                "color": "#ffffff"
+              }
+            ],
+            "position": "relative",
+            "margin": "lg",
+            "cornerRadius": "md",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "height": "28px",
+            "backgroundColor": "#C0C0C0"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "投稿評價",
+                  "uri": "http://linecorp.com/"
+                },
+                "color": "#ffffff"
+              }
+            ],
+            "position": "relative",
+            "margin": "lg",
+            "justifyContent": "center", 
+            "alignItems": "center",
+            "cornerRadius": "md",
+            "height": "28px",
+            "backgroundColor": "#E68750",
+            "offsetEnd": "6px"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "輸出課名",
+                  "text": "123"
+                },
+                "color": "#FFFFFF"
+              }
+            ],
+            "position": "relative",
+            "margin": "lg",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "cornerRadius": "md",
+            "backgroundColor": "#30D5C8",
+            "height": "28px",
+            "offsetEnd": "lg"
+          }
+        ],
+        "borderWidth": "none",
+        "margin": "sm",
+        "position": "relative",
+        "paddingTop": "sm"
+      }
+    ],
+    "backgroundColor": "#f7f6ee"
+  }
+}
