@@ -395,3 +395,36 @@ def handle_msg(event):
         )
     else:
         print("Empty")
+
+# 程式碼 8-2
+from django.core.paginator import Paginator
+from django.shortcuts import render
+
+# 程式碼 8-3
+def course_feedback(request):
+    
+    query = request.GET.get('query', '')  # 取得搜尋參數
+
+    if query:
+        all_feedback = \
+            Course.objects.filter(course_name__icontains=query) | \
+            Course.objects.filter(teacher_name__icontains=query)
+    else:
+        all_feedback = Course.objects.all().order_by('-last_updated_time')
+
+    paginator = Paginator(all_feedback, 10)
+
+    # 並接收網址中的 page 參數判斷第幾頁
+    page_number = request.GET.get('page')
+
+    # 再把剛剛包起來的 paginator 添上頁數選擇（page_number）打包
+    # 包起來的資料以 feedback 變數命名
+    feedback = paginator.get_page(page_number)
+
+    # 再用 context 字典打包準備回傳
+    context = {
+        'feedback': feedback,
+    }
+
+    # 最後就是使用 render將 context 渲染到 course_feedback.html
+    return render(request, 'course_feedback.html', context)
