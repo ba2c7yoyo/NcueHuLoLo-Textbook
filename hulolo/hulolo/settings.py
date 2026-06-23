@@ -36,6 +36,10 @@ DEBUG = True
 # 留意此處應更換為實際的 Ngrok URL，而非以下的範例 URL
 ALLOWED_HOSTS = ["127.0.0.1", "4b2f-114-45-OOO.ngrok-free.app"]
 
+# 程式碼 10-3
+# 特別留意網域調整成 PythonAnywhere's username，前幾行相同的變數 ALLOWED_HOSTS 將會被覆蓋
+ALLOWED_HOSTS = ["hulolo.pythonanywhere.com"]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,6 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# 程式碼 10-2，一開始 setting.py 就有它了
 STATIC_URL = "static/"
 
 # Default primary key field type
@@ -138,3 +143,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 SENIOR_RICH_MENU_ID = os.getenv("SENIOR_RICH_MENU_ID")
 DEFAULT_FIRST_PAGE_RICH_MENU_ID = os.getenv("DEFAULT_FIRST_PAGE_RICH_MENU_ID")
 DEFAULT_SECOND_PAGE_RICH_MENU_ID = os.getenv("DEFAULT_SECOND_PAGE_RICH_MENU_ID")
+
+# 程式碼 10-1
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
