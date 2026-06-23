@@ -1,0 +1,10 @@
+// # 圖文選單 1：引導使用者如何查詢
+{
+    "richMenuAliasId": "menu-about-teaching",
+    "richMenuId": "richmenu-OOOOOOOOOOOOOO"
+}
+// # 圖文選單 2：社群連結
+{
+    "richMenuAliasId": "menu-about-social-media",
+    "richMenuId": "richmenu-OOOOOOOOOOOOOO"
+}

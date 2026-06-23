@@ -217,11 +217,16 @@ def handle_teacher_name_msg(event):
         print("Empty")
 
 # 程式碼 7-16
+# 程式碼 9-17
 @parser.add(PostbackEvent)
 def handle_postback(event): 
     # 取得使用者點按鈕時回傳的資料
     postback_data = event.postback.data
 
+    # 程式碼 9-17
+    user_id = event.source.user_id
+
+    # --- 以下是先前的課程查詢---
     # 還記得前面提及按鈕背後的資料嗎? 在這!
     # postback_data 格式為 "課程名稱-老師名稱"
     if "-" in postback_data:
@@ -265,6 +270,22 @@ def handle_postback(event):
                 print("Empty")
         else:
             print("Empty")
+    # --- 以上是先前的課程查詢---
+    # 程式碼 9-17
+    elif "year_" in postback_data: # 系級的選擇回覆
+            year = postback_data.split("_")[1]
+            display_name = get_line_display_name(user_id)
+            register_user_info(user_id, display_name)
+            user_info = get_user_info(user_id)
+            user_info.year = year
+            user_info.save()
+            message = TextSendMessage(
+                text=f"""嗨！{year}級的同學，現在可以開始搜尋課程或老師了！或是查看圖文選單可以查看更多規則~""")
+            line_bot_api.reply_message(
+                event.reply_token,
+                message
+            )
+
 
 # 程式碼 7-22
 def dynamic_flex_message_package(title_name, 
@@ -316,11 +337,87 @@ def dynamic_flex_message_package(title_name,
         flex['body']['contents'].append(button)
     return flex
 
+
+# 程式碼 9-12
+def get_line_display_name(user_id):
+    try:
+        profile = line_bot_api.get_profile(user_id)
+        display_name = profile.display_name
+        return display_name
+    except LineBotApiError as e:
+        print(f"Error fetching user profile: {e}")
+        return "匿名"
+
+# 程式碼 9-13
+def get_user_info(user_id):
+    try:
+        user_info = UserInfo.objects.get(user_id=user_id)
+        return user_info
+    except UserInfo.DoesNotExist:
+        return None
+
+# 程式碼 9-14
+def register_user_info(user_id, display_name):
+    user_info, created = UserInfo.objects.get_or_create(
+        user_id=user_id, 
+        defaults={'display_name': display_name})
+    if not created:
+        user_info.display_name = display_name
+        user_info.save()
+
+# 程式碼 9-20
+from datetime import datetime
+def send_custom_rich_menu(user_info):
+    current_year = datetime.now().year - 1911
+    user_year = int(user_info.year)
+    if user_year - current_year == 4:
+        print("大一生，維持預設圖文選單")
+    else:
+        try:
+            if line_bot_api.get_rich_menu_id_of_user(user_info.user_id) != settings.SENIOR_RICH_MENU_ID:
+                line_bot_api.link_rich_menu_to_user(
+                user_info.user_id, 
+                settings.SENIOR_RICH_MENU_ID)
+                print("非大一生，已更換成 Senior 圖文選單")
+            else:
+                print("非大一生，已經是 Senior 圖文選單，不更換")
+        except:
+            line_bot_api.link_rich_menu_to_user(
+            user_info.user_id, 
+            settings.DEFAULT_FIRST_PAGE_RICH_MENU_ID)
+
+
 # 程式碼 7-19
+# 程式碼 9-15
+# 程式碼 9-21
 @parser.add(MessageEvent, message=TextMessage)
 def handle_msg(event):    
     user_message = event.message.text  # 取得使用者發送的文字
-  
+
+    # 程式碼 9-15
+    user_id = event.source.user_id
+    # ---插入以下程式碼---
+    if get_user_info(user_id) is None:
+        flex_message = json.load(
+            open(os.path.join(
+            BASE_DIR, 'chatbot', 'reply_year_option.json'),
+            'r', encoding='utf-8'))
+        message = FlexSendMessage(
+                            alt_text=f"請選擇系級",
+                            contents=flex_message
+                        )
+        line_bot_api.reply_message(
+                    event.reply_token,
+                    message)
+        return    # 不再往下跑程式碼
+    
+    # 程式碼 9-21
+    else:
+        user_info = get_user_info(user_id)
+        send_custom_rich_menu(user_info)
+
+    # ---插入以上程式碼---
+
     # 以不同條件做搜尋
     filtered_teacher = Course.objects.filter(teacher_name=user_message)
     filtered_course = Course.objects.filter(course_name=user_message)
@@ -395,6 +492,9 @@ def handle_msg(event):
         )
     else:
         print("Empty")
+
+
+# -----以下是第 8 章網頁瀏覽部分的程式碼-----
 
 # 程式碼 8-2
 from django.core.paginator import Paginator

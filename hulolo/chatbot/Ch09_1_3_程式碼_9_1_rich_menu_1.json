@@ -1,0 +1,60 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "圖文選單 1",
+  "chatBarText": "查看更多資訊",
+  "areas": [
+    {
+      "bounds": {
+        "x": 8,
+        "y": 4,
+        "width": 841,
+        "height": 836
+      },
+      "action": {
+        "type": "message",
+        "text": "規則: 直接在對話框輸入老師名即可~"
+      }
+    },
+    {
+      "bounds": {
+        "x": 844,
+        "y": 13,
+        "width": 729,
+        "height": 830
+      },
+      "action": {
+        "type": "message",
+        "text": "規則: 直接在對話框輸入課程名即可~"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1588,
+        "y": 34,
+        "width": 131,
+        "height": 152
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://ironman-example.ncuehulolo.idv.tw"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1731,
+        "y": 8,
+        "width": 769,
+        "height": 835
+      },
+      "action": {
+        "type": "richmenuswitch",
+        "richMenuAliasId": "menu-about-social-media",
+        "data": "richmenu-changed-to-social-media"
+      }
+    }
+  ]
+}

@@ -133,3 +133,7 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+SENIOR_RICH_MENU_ID = os.getenv("SENIOR_RICH_MENU_ID")
+DEFAULT_FIRST_PAGE_RICH_MENU_ID = os.getenv("DEFAULT_FIRST_PAGE_RICH_MENU_ID")
+DEFAULT_SECOND_PAGE_RICH_MENU_ID = os.getenv("DEFAULT_SECOND_PAGE_RICH_MENU_ID")

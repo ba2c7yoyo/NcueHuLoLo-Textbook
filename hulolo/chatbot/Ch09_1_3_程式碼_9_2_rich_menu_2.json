@@ -1,0 +1,60 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "圖文選單 3",
+  "chatBarText": "記得去選課！",
+  "areas": [
+    {
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 630,
+        "height": 835
+      },
+      "action": {
+        "type": "message",
+        "text": "規則: 直接在對話框輸入老師名即可~"
+      }
+    },
+    {
+      "bounds": {
+        "x": 642,
+        "y": 8,
+        "width": 624,
+        "height": 835
+      },
+      "action": {
+        "type": "message",
+        "text": "規則: 直接在對話框輸入課程名即可~"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1275,
+        "y": 4,
+        "width": 613,
+        "height": 839
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://ironman-example.ncuehulolo.idv.tw"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1900,
+        "y": 8,
+        "width": 592,
+        "height": 835
+      },
+      "action": {
+        "type": "richmenuswitch",
+        "richMenuAliasId": "menu-about-teaching",
+        "data": "richmenu-changed-to-teaching"
+      }
+    }
+  ]
+}
