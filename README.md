@@ -69,6 +69,7 @@ response = requests.get(url)
 
 ### 六、原型網站
 
+點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
 1. 書籍中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
 2. 書籍中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例呈現之網站。
 
@@ -79,6 +80,8 @@ response = requests.get(url)
 ### 八、聯絡資訊
 
 歡迎透過以下方式與作者聯繫：
+
+點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
 1. [Joseph | LinkedIn](https://www.linkedin.com/in/zhaoqihu/)
 2. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
 3. joseph.hu@petsci.tw
