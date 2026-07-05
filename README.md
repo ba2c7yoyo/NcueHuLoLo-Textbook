@@ -1,26 +1,83 @@
 ﻿## 《LINE Bot Side Project 實戰：從設計思考到部署與產品變現的 16 堂關鍵必修課》教學資源
 
 ### 一、操作介面使用
+使用線上教學資源時，可以使用以下主流的三種方式進行檔案的瀏覽：
 
-**1. GitHub 介面**
+**1. 原始 GitHub 介面**
+
+最簡單的使用方式就是直接在此頁面點選各檔案查看。
      
 **2. 線上 VScode 介面**
-  
-**3. 拉到本地端**
+
+在此頁面上直接按下鍵盤上的「‧」，這顆按鍵與「>」同一個位置，也在問號的左邊。按下之後會載入 VScode 線上版本，可以用熟悉的方式線上瀏覽檔案。
+
+<img width="60" alt="image" src="https://github.com/user-attachments/assets/4ce2d839-5859-47c9-b0af-303bf8424a13" />
+
+> 圖一、鍵盤上的按鍵大概長這樣
+
+**3. 拉到本地端再開啟**
+
+使用`git clone`直接複製到本地端，再以 VScode 打開資料夾瀏覽，當然要用記事本也是一種很酷的選擇。
 
 ### 二、依章節搜尋
+想要找某一章的程式碼？
+
+我將每一個章節獨立使用了單一個分支（Branch），目前所看到的分支為公告使用（Announcement），
+而因為第三章之前並無介紹到程式碼，所以**分支是從 Ch04 開始**，可以直接點 GitHub 上的分支選擇做切換章節。
+每一個**章節都會繼承前面章節的所有程式碼**，若後面的章節刪除或修改了先前的程式碼，也會以註解的方式在檔案中特別說明。
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/dc4713f1-5b8d-4cc3-88cb-9c22698881f0" />
+
+> 圖二、GitHub 切換章節的位置
 
 ### 三、依程式碼搜尋
+想要章節中找某段程式碼以便複製與參考怎麼辦？
+
+書籍中每一段程式碼都有相對應的編號，舉例來說會長這樣子：
+ * 程式碼 **5-5**
+```python
+# hulolo > chatbot > views.py
+def reply_cat_url():
+url = "https://api.thecatapi.com/v1/images/search?limit=1"
+response = requests.get(url)
+# ......略
+```
+可以使用 `Ctrl+F` 搜尋功能直接輸入「**5-5**」，就會找到它了，當然要在對的章節（分支）哦。
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/7f652609-6e30-4b5f-84c0-82917d721a15" />
+
+> 圖三、依程式碼搜尋，以 VScode 為例
 
 ### 四、依檔案名稱搜尋
+有一些檔案是 JSON 格式，抑或是 JPG 圖文選單範例圖檔，此時很難使用上面方式提示，則會在檔案名稱中以規律方式呈現，
+例如，某一檔案名稱為：`Ch09_1_3_程式碼_9_1_rich_menu_1_更改後.json`，
+指的是書籍中第 9 章的第 1 小節中的第 3 小點：
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/ab079974-045c-446a-ae18-ab10b92e7a84" />
+
+> 圖四、書籍中的 9.1.3 小點
+
+其中對**程式碼 9-1** 所補充或提供的檔案。
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/2f4a7272-c481-4090-9e8c-1f2254a6176d" />
+
+> 圖五、書籍中的程式碼 9-1
 
 ### 五、勘誤內容
 
+截至目前作者尚未找到錯誤，歡迎讀者踴躍提供。
+
 ### 六、原型網站
+
+1. 書籍中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
+2. 書籍中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例呈現之網站。
 
 ### 七、書籍通路
 
+還在印。
+
 ### 八、聯絡資訊
+
 歡迎透過以下方式與作者聯繫：
 1. [Joseph | LinkedIn](https://www.linkedin.com/in/zhaoqihu/)
 2. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
