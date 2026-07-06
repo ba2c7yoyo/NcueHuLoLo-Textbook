@@ -79,8 +79,9 @@ response = requests.get(url)
 ### 七、原型網站
 
 點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
-1. 書籍中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
-2. 書籍中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例呈現之網站。
+1. 書中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
+2. 書中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例（程式碼 8-13）呈現之評價查詢網站。
+3. 書中所描述之範例網站——[課程評價](https://hulolo.pythonanywhere.com)，此為根據書中範例（章節 8.2.6）經過 Prompt 修飾呈現之評價查詢網站。
 
 ### 八、書籍通路
 
