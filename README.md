@@ -91,14 +91,14 @@ response = requests.get(url)
 點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
 * [天瓏網路書店](https://www.tenlong.com.tw/items/9786264145602)
 * [博客來](https://www.books.com.tw/products/0011057624)
+* [momo 購物網](https://www.momoshop.com.tw/product/15483291)
 
 ### 九、聯絡資訊
 
 歡迎透過以下方式與作者聯繫：
 
 點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
-1. [Joseph | LinkedIn](https://www.linkedin.com/in/zhaoqihu/)
-2. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
-3. joseph.hu@petsci.tw
+1. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
+2. joseph.hu@petsci.tw
 
 
