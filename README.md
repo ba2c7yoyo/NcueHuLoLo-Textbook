@@ -1,5 +1,47 @@
 ﻿## 《LINE Bot Side Project 實戰：從設計思考到部署與產品變現的 16 堂關鍵必修課》教學資源
 
+ ### 本章節（Ch11）教學資源
+點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
+
+**0. 來分享冷笑話好了**
+
+「這是腳」的英文怎麼說？（答案在最下面）
+
+**1. 先備知識**
+
+這一章節算是全書中較難的進階章節，而網路上中文文獻稀少，因此特別撰寫此章，在念這一個章節前，需要有的觀念與準備。此外，在本章中部分程式觀念僅是引入門，閱讀以下文章後，還需要多藉由實戰累積經驗：
+ 
+* [台灣對於行動支付（如 Apple Pay、Google Pay 及 LINE Pay）與電子支付（如
+iPASS MONEY 及 LINE Pay Money）名詞定義](https://aftee.tw/blog/third-party-payment/)
+* [LINE Pay 與 LINE Pay Money 的差異](https://applealmond.com/posts/298896)
+* [實體收款 QRcode 立牌與線上收款的 LINE Pay Online API](https://www.hankexploring.com/linepay-business/)
+* [行號與公司的設立差異](https://blog.simpany.co/company-vs-business-firm-1/)
+* [API 基本概念與結構](https://ai-automation.tscloud.com.tw/autoflow/column/what-is-api)
+* [了解 GET、POST、PUT、DELETE 差異](https://realnewbie.com/posts/what-is-http-method)
+* [RESTful API 架構](https://www.explainthis.io/zh-hant/swe/restful-api)
+* [Django 搭配 Django-REST-framework 的後端建置](https://blog.kyomind.tw/django-rest-framework-01/)
+
+**2. QR code 超連結**
+
+章節中出沒的各種 QR code 同步置於此。
+
+* 圖 11-4 [申請 LINE Pay 服務的沙盒帳戶](https://developers-pay.line.me/zh/sandbox)
+* 圖 11-8 [LINE Pay 合作商家申請頁面，點選「自行完成線上申請」，可以見到申請資格與所需文件](https://pay.line.me/merchant-apply/tw/contact-request)
+* 圖 11-11 [Online API | LINE Pay Developers](https://developers-pay.line.me/zh/online-api-v4)
+
+
+**3. 延伸補充**
+
+位於章末的再往前進一步相關補充資源，由作者精挑細選出各路大神所撰寫，且容易咀嚼的說明文章。
+
+* [雜湊 Hash 是什麼？](https://realnewbie.com/posts/understanding-hash-what-you-need-to-know-before-implementing-authentication)
+
+ ---
+ 
+<img width="225" alt="image" src="https://github.com/user-attachments/assets/984c7ada-9ba8-4925-b2b6-cce149a479b2" />
+
+此網頁為本書隨書附的線上教學資源，其範例程式碼會隨著章節進展逐步介紹，讀者可參考以下說明了解網頁的使用方法。
+
 ### 一、操作介面使用
 使用線上教學資源時，可以使用以下主流的三種方式進行檔案的瀏覽：
 
@@ -79,20 +121,25 @@ response = requests.get(url)
 ### 七、原型網站
 
 點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
-1. 書籍中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
-2. 書籍中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例呈現之網站。
+1. 書中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
+2. 書中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例（程式碼 8-13）呈現之評價查詢網站。
+3. 書中所描述之範例網站——[課程評價](https://hulolo.pythonanywhere.com)，此為根據書中範例（章節 8.2.6）經過 Prompt 修飾呈現之評價查詢網站。
 
 ### 八、書籍通路
 
-還在印。
+點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
+* [天瓏網路書店](https://www.tenlong.com.tw/items/9786264145602)
+* [博客來](https://www.books.com.tw/products/0011057624)
+* [誠品](https://www.eslite.com/product/10012011762683187896000)
+* [momo 購物網](https://www.momoshop.com.tw/product/15483291)
+* [金石堂](https://www.kingstone.com.tw/basic/2013120779440)
 
 ### 九、聯絡資訊
 
 歡迎透過以下方式與作者聯繫：
 
-點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
-1. [Joseph | LinkedIn](https://www.linkedin.com/in/zhaoqihu/)
-2. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
-3. joseph.hu@petsci.tw
+點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
+1. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
+2. joseph.hu@petsci.tw
 
-
+Answer：_Jessica_
