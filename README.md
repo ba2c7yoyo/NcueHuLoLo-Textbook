@@ -1,5 +1,36 @@
 ﻿## 《LINE Bot Side Project 實戰：從設計思考到部署與產品變現的 16 堂關鍵必修課》教學資源
 
+ ### 本章節（Ch10）教學資源
+點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
+
+**1. 先備知識**
+
+在念這一個章節前，需要有的觀念與準備。
+ 
+* 把網路線或 Wi-Fi 接上電腦，不過都看到這行了應該是沒問題
+
+**2. QR code 超連結**
+
+章節中出沒的各種 QR code 同步置於此。
+
+* 圖 10-2 [PythonAnywhere 網站](https://www.pythonanywhere.com/)
+* 圖 10-11 [Flask 為甚麼需要 WSGI 與 Nginx | Max 行銷誌](https://www.maxlist.xyz/2020/05/06/flask-wsgi-nginx/)
+* 圖 10-12　[理解 Python 後端技術：從 CGI 談到 WSGI, uWSGI 與 uwsgi | MyApollo](https://myapollo.com.tw/blog/python-backend-cgi-wsgi-uwsgi-explanations/)
+
+
+**3. 延伸補充**
+
+位於章末的再往前進一步相關補充資源，由作者精挑細選出各路大神所撰寫，且容易咀嚼的說明文章。
+
+* [什麼是 ALLOWED_HOSTS](https://realnewbie.com/posts/django-beginner-guide-allowed-hosts-configuration-and-security)
+* [static 與 staticfiles 的區別](https://realnewbie.com/posts/django-static-files-management-complete-guide-static-vs-staticfiles)
+
+ ---
+ 
+<img width="225" alt="image" src="https://github.com/user-attachments/assets/984c7ada-9ba8-4925-b2b6-cce149a479b2" />
+
+此網頁為本書隨書附的線上教學資源，其範例程式碼會隨著章節進展逐步介紹，讀者可參考以下說明了解網頁的使用方法。
+
 ### 一、操作介面使用
 使用線上教學資源時，可以使用以下主流的三種方式進行檔案的瀏覽：
 
@@ -79,20 +110,23 @@ response = requests.get(url)
 ### 七、原型網站
 
 點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
-1. 書籍中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
-2. 書籍中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例呈現之網站。
+1. 書中所描述之原型軟體——[彰師小生物](https://ncuehulolo.idv.tw/)，此為正式運作之軟體工具，若讀者非彰師大學生，無法使用評價查詢功能。
+2. 書中所描述之範例網站——[課程評價](https://ironman-example.ncuehulolo.idv.tw/)，此為根據書中範例（程式碼 8-13）呈現之評價查詢網站。
+3. 書中所描述之範例網站——[課程評價](https://hulolo.pythonanywhere.com)，此為根據書中範例（章節 8.2.6）經過 Prompt 修飾呈現之評價查詢網站。
 
 ### 八、書籍通路
 
-還在印。
+點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
+* [天瓏網路書店](https://www.tenlong.com.tw/items/9786264145602)
+* [博客來](https://www.books.com.tw/products/0011057624)
+* [誠品](https://www.eslite.com/product/10012011762683187896000)
+* [momo 購物網](https://www.momoshop.com.tw/product/15483291)
+* [金石堂](https://www.kingstone.com.tw/basic/2013120779440)
 
 ### 九、聯絡資訊
 
 歡迎透過以下方式與作者聯繫：
 
-點擊以下連結時，如要維持此分頁，請右鍵點以新分頁開啟。
-1. [Joseph | LinkedIn](https://www.linkedin.com/in/zhaoqihu/)
-2. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
-3. joseph.hu@petsci.tw
-
-
+點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
+1. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
+2. joseph.hu@petsci.tw
