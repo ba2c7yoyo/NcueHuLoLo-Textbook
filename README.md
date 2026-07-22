@@ -3,19 +3,22 @@
  ### 本章節（Ch04）教學資源
 點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
 
-**1. QR code 超連結**
-
-* 圖 4-1 [Python 3.12 For Windows 64-bit - 點擊即下載](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe)
-* 圖 4-5 [《大半夜還在用私人 Line 回覆客戶 / 家長的問題？「Line 官方帳號 + AI 助理」讓你
-實現公私分明，擺脫 80% 雜務！》—PAPAYA 電腦教室](https://youtu.be/paJpjzzEcjY?si=muIUEAbHL7gP5PaL)
-* 圖 4-9 [Ngrok 下載網址](https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip)
-
-**2. 先備知識**
+**1. 先備知識**
 
 在念這一個章節前，需要有的觀念與準備。
  
 * [安裝 VScode](https://medium.com/@sajhon_chen4/vs-code%E5%AE%89%E8%A3%9D%E6%95%99%E5%AD%B8-3ccb1570e5cf)
 * [建立 LINE Bot](https://youtu.be/paJpjzzEcjY?si=muIUEAbHL7gP5PaL)
+
+  
+**2. QR code 超連結**
+
+章節中出沒的各種 QR code 同步置於此。
+
+* 圖 4-1 [Python 3.12 For Windows 64-bit - 點擊即下載](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe)
+* 圖 4-5 [《大半夜還在用私人 Line 回覆客戶 / 家長的問題？「Line 官方帳號 + AI 助理」讓你
+實現公私分明，擺脫 80% 雜務！》—PAPAYA 電腦教室](https://youtu.be/paJpjzzEcjY?si=muIUEAbHL7gP5PaL)
+* 圖 4-9 [Ngrok 下載網址](https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip)
 
 **3. 延伸補充**
 
