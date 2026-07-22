@@ -3,19 +3,22 @@
  ### 本章節（Ch06）教學資源
 點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
 
-**1. QR code 超連結**
-
-* 圖 6-2 [Model field reference | Django Documentation | Django](https://docs.djangoproject.com/en/6.0/ref/models/fields/#field-types)
-
-**2. 先備知識**
+**1. 先備知識**
 
 在念這一個章節前，需要有的觀念與準備。
  
 * 對世界充滿好奇的心，然後把開發環境開好
+  
+**2. QR code 超連結**
 
-**3. 再往前一步**
+章節中出沒的各種 QR code 同步置於此。
 
-位於章末的再往前一步相關補充資源，由作者精挑細選出各路大神所撰寫，且容易咀嚼的說明文章。
+* 圖 6-2 [Model field reference | Django Documentation | Django](https://docs.djangoproject.com/en/6.0/ref/models/fields/#field-types)
+
+
+**3. 延伸補充**
+
+位於章末的再往前進一步相關補充資源，由作者精挑細選出各路大神所撰寫，且容易咀嚼的說明文章。
 
 * [變數命名規則 & 主流命名方式](https://ithelp.ithome.com.tw/articles/10294637)
 * [寫出 Clean Code 的一些技巧＆原則](https://codelove.tw/@tony/post/L3QkMq)
