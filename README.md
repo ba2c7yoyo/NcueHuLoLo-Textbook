@@ -1,4 +1,4 @@
-## 《LINE Bot Side Project 實戰：從設計思考到部署與產品變現的 16 堂關鍵必修課》教學資源
+﻿## 《LINE Bot Side Project 實戰：從設計思考到部署與產品變現的 16 堂關鍵必修課》教學資源
 <img width="225" alt="image" src="https://github.com/user-attachments/assets/984c7ada-9ba8-4925-b2b6-cce149a479b2" />
 
 此網頁為本書隨書附的線上教學資源，其範例程式碼會隨著章節進展逐步介紹，讀者可參考以下說明了解網頁的使用方法。
@@ -102,3 +102,4 @@ response = requests.get(url)
 點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
 1. [PetSci 毛怪實驗紀錄簿 | Threads](https://www.threads.net/@petsci_note)
 2. joseph.hu@petsci.tw
+    * 因本書為部分大學教科用書，為維持測驗公平，習題解答並未在書中直接提供，多數習題都可以透過網路資源查找取得，若讀者對內容有疑問歡迎來信討論。
