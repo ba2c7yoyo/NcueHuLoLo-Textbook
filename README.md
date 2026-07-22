@@ -15,7 +15,7 @@
 
 * 圖 10-2 [PythonAnywhere 網站](https://www.pythonanywhere.com/)
 * 圖 10-11 [Flask 為甚麼需要 WSGI 與 Nginx | Max 行銷誌](https://www.maxlist.xyz/2020/05/06/flask-wsgi-nginx/)
-* 圖 10-12　[理解 Python 後端技術：從 CGI 談到 WSGI, uWSGI 與 uwsgi | MyApollo](https://myapollo.com.tw/blog/python-backend-cgi-wsgi-uwsgi-explanations/)
+* 圖 10-12 [理解 Python 後端技術：從 CGI 談到 WSGI, uWSGI 與 uwsgi | MyApollo](https://myapollo.com.tw/blog/python-backend-cgi-wsgi-uwsgi-explanations/)
 
 
 **3. 延伸補充**
