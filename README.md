@@ -3,22 +3,24 @@
  ### 本章節（Ch07）教學資源
 點擊以下連結時，如要維持此頁面存在，請右鍵點以新分頁開啟。
 
-**1. QR code 超連結**
+**1. 先備知識**
 
+在念這一個章節前，需要有的觀念與準備。
+ 
+* 這一章頁數比較多，要加油哦~
+  
+**2. QR code 超連結**
+
+章節中出沒的各種 QR code 同步置於此。
 * 7.1.1 http://127.0.0.1:8000/admin/chatbot/course/
 * 圖 7-6 [LINE Flex Message Simulator | LINE Flex Message 模擬器](https://developers.line.biz/flex-simulator/)
 * 圖 7-9 [JSON Editor Online](https://jsoneditoronline.org/)
 * 圖 7-16 [Send Messages | LINE Developers Documentation](https://developers.line.biz/en/docs/messaging-api/sending-messages/#messaging-types)
 
-**2. 先備知識**
+**3. 延伸補充**
 
-在念這一個章節前，需要有的觀念與準備。
- 
-* 這一章頁數比較多，要加油哦~
+位於章末的再往前進一步相關補充資源，由作者精挑細選出各路大神所撰寫，且容易咀嚼的說明文章。
 
-**3. 再往前一步**
-
-位於章末的再往前一步相關補充資源，由作者精挑細選出各路大神所撰寫，且容易咀嚼的說明文章。
 
 * [資料篩選 objects.filter()及objects.get()](https://ithelp.ithome.com.tw/articles/10301965)
 * [Push Message及Reply Message差異](https://hackmd.io/@assistive-devices/rJEQJX95be)
