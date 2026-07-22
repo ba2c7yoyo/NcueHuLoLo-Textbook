@@ -12,6 +12,8 @@
 
 **2. QR code 超連結**
 
+章節中出沒的各種 QR code 同步置於此。
+
 * 圖 8-1 [Hinet 域名註冊](https://domain.hinet.net/)
 * 圖 8-6 [極速切版 - 個人介紹網站 -YouTube](https://www.youtube.com/watch?v=yHLFbaUbyF4)
 * 圖 8-12 [Bootstrap Icons · Official open source SVG icon library for Bootstrap](https://icons.getbootstrap.com/)
