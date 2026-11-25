@@ -1,6 +1,10 @@
 ﻿## 《LINE Bot Side Project 實戰：從設計思考到部署與產品變現的 16 堂關鍵必修課》教學資源
 <img width="225" alt="image" src="https://github.com/user-attachments/assets/984c7ada-9ba8-4925-b2b6-cce149a479b2" />
 
+本書為大學通識及資工之教科書，**教師、講師欲當作教學用書，
+歡迎直接聯繫[出版商](https://www.drmaster.com.tw/)，
+協助訂購及索取各章節簡報檔與解答。**
+
 此網頁為本書隨書附的線上教學資源，其範例程式碼會隨著章節進展逐步介紹，讀者可參考以下說明了解網頁的使用方法。
 
 ### 一、操作介面使用
